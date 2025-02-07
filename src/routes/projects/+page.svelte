@@ -21,7 +21,7 @@
     color: #e9d2f4;
 
     font-size: 3rem;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Fira Sans", monospace;
     text-align: center;
     white-space: nowrap;
     margin: 0;
