@@ -13,9 +13,7 @@
   <div id="title">
     <h1>Overview</h1>
   </div>
-  <p>
-    hawk tuah rizz fein kai. kai tuah rizz fein hawk. rizz fein hawk tuah kai.
-  </p>
+  <p></p>
 </main>
 
 <style>
@@ -29,7 +27,7 @@
     --accent: #febc7a;
     --title-color: #e9d2f4;
     --subtext-color: #626262;
-    font-family: "Victor Mono", monospace;
+    font-family: "Sans", monospace;
     scrollbar-color: var(--accent) #1f1f1f;
     scrollbar-width: thin;
   }
