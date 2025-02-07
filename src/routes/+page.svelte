@@ -19,28 +19,36 @@
 </main>
 
 <style>
-  :root {
+  :global(body) {
+    display: grid;
+    grid-template-columns: 1fr min(47rem, 90%) 1fr;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 0.625rem;
     background-color: #1f1f1f;
     color: var(--text-color);
     --accent: #febc7a;
     --title-color: #e9d2f4;
     --subtext-color: #626262;
-    font-family: "Fira Sans", monospace;
+    font-family: "Victor Mono", monospace;
     scrollbar-color: var(--accent) #1f1f1f;
     scrollbar-width: thin;
   }
-  a,
-  a:visited {
-    color: var(--accent);
-    text-decoration: none;
+
+  header {
+    grid-row: 1;
+    grid-column: 2;
   }
+
   main {
+    grid-row: 2;
+    grid-column: 2;
     color: var(--accent);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
   #title {
     font-size: 2rem;
     color: var(--title-color);
@@ -54,5 +62,11 @@
     flex-direction: row;
     align-content: flex-end;
     align-items: center;
+  }
+
+  a,
+  a:visited {
+    color: var(--accent);
+    text-decoration: none;
   }
 </style>
