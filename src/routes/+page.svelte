@@ -2,69 +2,64 @@
   import "../fonts.css";
 </script>
 
-<header>
-  <nav id="navbar">
-    <a href="/poo"> /poo/</a>
-    <a href="/projects"> /projects/</a>
-    <a href="/about">/about/</a>
-  </nav>
-</header>
 <main>
   <div id="title">
-    <h1>Overview</h1>
+    <h1>Caveman Software</h1>
   </div>
-  <p></p>
+  <p>
+    we love open source! also, check out <a
+      href="https://github.com/cavemansoftware/caveman-linux"
+      id="caveman-linux"
+    >
+      caveman linux</a
+    >
+  </p>
 </main>
 
 <style>
+  * {
+    text-decoration: none;
+  }
   :global(body) {
     display: grid;
     grid-template-columns: 1fr min(47rem, 90%) 1fr;
-    grid-template-rows: auto 1fr;
-    grid-row-gap: 0.625rem;
-    background-color: #1f1f1f;
+    background-color: var(--background-color);
     color: var(--text-color);
-    --accent: #febc7a;
-    --title-color: #e9d2f4;
-    --subtext-color: #626262;
+    --background-color: #1f1f1f;
+    --accent: #ffab91;
+    --title-color: #dde1e6;
+    --subtext-color: #dde1e6;
     font-family: "Sans", monospace;
     scrollbar-color: var(--accent) #1f1f1f;
     scrollbar-width: thin;
   }
 
-  header {
-    grid-row: 1;
-    grid-column: 2;
+  #caveman-linux {
+    color: var(--accent);
+  }
+  h1 {
+    margin-top: 0;
   }
 
   main {
+    width: 100%;
     grid-row: 2;
     grid-column: 2;
-    color: var(--accent);
+    color: var(--subtext-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    text-wrap: wrap;
   }
 
+  main > p {
+    width: 1rem;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-align: center;
+  }
   #title {
     font-size: 2rem;
     color: var(--title-color);
-  }
-
-  #navbar {
-    padding: 0.75rem;
-    gap: 0.25rem;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    align-items: center;
-  }
-
-  a,
-  a:visited {
-    color: var(--accent);
-    text-decoration: none;
   }
 </style>
