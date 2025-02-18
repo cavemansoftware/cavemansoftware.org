@@ -1,1 +1,0 @@
-import{a,t as i}from"../chunks/uDa8WCL2.js";import"../chunks/DNKJGkDT.js";var r=i('<div class="outer svelte-a8ire4"><div class="titlecontainer svelte-a8ire4"><h1 id="title" class="svelte-a8ire4">Projects</h1></div></div>');function v(e){var t=r();a(e,t)}export{v as component};

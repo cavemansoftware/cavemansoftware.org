@@ -1,0 +1,1 @@
+import{a as o,t}from"../chunks/uDa8WCL2.js";import"../chunks/DNKJGkDT.js";var n=t('<main><div id="title"><h1>Caveman Software</h1></div> <p>we love open source! also, check out <a href="https://github.com/cavemansoftware/caveman-linux">caveman linux</a></p></main>');function p(a){var e=n();o(a,e)}export{p as component};
