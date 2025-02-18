@@ -3,7 +3,7 @@ export const prerender = true;
 export default {
   kit: {
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/cavemansoftware.org" : "",
+      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
     },
     adapter: adapter({
       // default options are shown. On some platforms
