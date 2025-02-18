@@ -7,7 +7,7 @@ Optional - For nix users
 
 `npm run dev`
 
-Preview prod with 
+Preview prod with
 `npm run build`
 `npm run preview`
 
