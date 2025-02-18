@@ -1,11 +1,14 @@
 <script lang="ts">
   let { children } = $props();
+  import { base } from "$app/paths";
 </script>
 
+<link rel="icon" type="image/svg+xml" href="{base}/favicon.svg" />
+
 <nav>
-  <a href="/"> /home/</a>
-  <a href="/projects"> /projects/</a>
-  <a href="/about">/about/</a>
+  <a href="{base}/"> /home/</a>
+  <a href="{base}/projects"> /projects/</a>
+  <a href="{base}/about">/about/</a>
 </nav>
 {@render children()}
 
